@@ -9,6 +9,10 @@ gem 'pg'
 
 gem 'activeadmin'
 
+group :development, :test do
+gem 'foreman'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
