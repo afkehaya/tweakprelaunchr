@@ -13,6 +13,8 @@ group :development, :test do
 gem 'foreman'
 end
 
+# Mandril for mailing users
+gem 'mandrill-api', '~> 1.0.53', require: "mandrill"
 
 # Gems used only for assets and not required
 # in production environments by default.
