@@ -9,6 +9,8 @@ gem 'pg'
 
 gem 'activeadmin'
 
+#for adding names to mailchimp
+gem ‘gibbon’, ‘~> 2.0.0’
 
 # Gems used only for assets and not required
 # in production environments by default.

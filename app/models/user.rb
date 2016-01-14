@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
     validates :referral_code, :uniqueness => true
 
     before_create :create_referral_code
+    before_create :add_to_list
     after_create :send_welcome_email
 
     REFERRAL_STEPS = [
@@ -36,6 +37,9 @@ class User < ActiveRecord::Base
             "image" => ActionController::Base.helpers.asset_path("refer/blade-explain@2x.png")
         }
     ]
+    def add_to_list
+        list_id = “YOUR_LIST_ID” @gb = Gibbon::Request.new subscribe = @gb.lists(list_id).members.create(body: { email_address: self.email, status: “subscribed”, double_optin: false })
+    end
 
     private
 
