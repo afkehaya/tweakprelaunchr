@@ -38,8 +38,14 @@ class User < ActiveRecord::Base
         }
     ]
     def add_to_list
-        list_id = “YOUR_LIST_ID” @gb = Gibbon::Request.new subscribe = @gb.lists(list_id).members.create(body: { email_address: self.email, status: “subscribed”, double_optin: false })
-    end
+      list_id = "d20fb9e7e3"
+      @gb = Gibbon::Request.new
+      subscribe = @gb.lists(list_id).members.create(body: {
+        email_address: self.email, 
+        status: "subscribed", 
+        double_optin: false
+        })
+   end
 
     private
 
