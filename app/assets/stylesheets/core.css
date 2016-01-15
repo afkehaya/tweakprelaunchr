@@ -96,7 +96,7 @@ html.home{
 #home .form-wrap .byline{
 	font-size: 15px;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #000;
 	text-align: center;
 	font-weight: bold;
 	letter-spacing: 2px;
@@ -107,7 +107,7 @@ html.home{
 	float: left;
 	font-size: 13px;
 	padding: 8px 0 8px 10px;
-	border: 1px solid #074E6F;
+	border: 1px solid #000;
 	width: 256px;
 	outline: none;
 	letter-spacing: 1px;
@@ -115,7 +115,7 @@ html.home{
 
 #home .form-wrap .submit{
 	width: 143px;
-	background: #074E6F;
+	background: #000;
 	float: left;
 	height: 37px;
 	line-height: 37px;
@@ -277,7 +277,7 @@ html.home{
 
 #refer .header p{
 	float: left;
-	color: #FFF;
+	color: #000;
 	font-weight: 500;
 	text-transform: uppercase;
 	line-height: 50px;
@@ -317,16 +317,16 @@ html.home{
 }
 
 #refer .mammoth .need{
-	color: #FFF;
+	color: #000;
 	font-size: 38px;
 	text-transform: uppercase;
 	font-weight: bold;
-	margin: 102px 0 0 72px;
+	margin: 123px 0 0 5px;
 	display: block;
 	line-height: 56px;
 	letter-spacing: 4px;
 	text-align: center;
-	width: 284px;
+	width: 355px;
 }
 
 #refer .share-wrap{
@@ -350,7 +350,7 @@ html.home{
 	line-height: 40px;
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #074E6F;
+	color: #c62424;
 	margin-top: 18px;
 	letter-spacing: .13em;
 }
@@ -418,7 +418,7 @@ html.home{
 #refer .prizes .callout{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: #000;
 	font-weight: bold;
 	margin: 20px 0 0 0;
 	letter-spacing: 2px;
@@ -466,7 +466,7 @@ html.home{
 #refer .prizes .products li.title{
 	height: 100%;
 	text-transform: uppercase;
-	color: #074E6F;
+	color: #000;
 	font-weight: 500;
 	font-size: 14px;
 	float: left;
@@ -487,7 +487,7 @@ html.home{
 
 #refer .prizes .products li.product{
 	height: 100%;
-	color: #074E6F;
+	color: #000;
 	width: 125px;
 	margin-right: 129px;
 	float: left;
@@ -582,7 +582,7 @@ html.home{
 #refer .prizes p.place{
 	text-align: center;
 	font-size: 16px;
-	color: #074E6F;
+	color: #000;
 	width: 100%;
 	font-weight: 500;
 	margin-top: 30px;
