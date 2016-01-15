@@ -39,9 +39,6 @@ class User < ActiveRecord::Base
     ]
     def add_to_list
       list_id = "d20fb9e7e3"
-      puts ENV["MAILCHIMP_KEY"].inspect
-      puts "error stop"
-      puts ENV.inspect
       @gb = Gibbon::Request.new(api_key: ENV["MAILCHIMP_KEY"])
       subscribe = @gb.lists(list_id).members.create(body: {
         email_address: self.email, 
