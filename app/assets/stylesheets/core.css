@@ -57,7 +57,7 @@ html.home{
 #home .hero .large{
 	font-weight: bold;
 	font-size: 40px;
-	color: #074E6F;
+	color: #ffffff;
 	text-transform: uppercase;
 	margin: 85px 0 0 136px;
 	position: relative;
@@ -67,7 +67,7 @@ html.home{
 
 #home .hero .small{
 	font-weight: bold;
-	color: #955F5D;
+	color: #ffffff;
 	font-size: 18px;
 	margin: 10px 0 0 115px;
 	line-height: 30px;
