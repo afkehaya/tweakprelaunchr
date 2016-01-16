@@ -39,12 +39,13 @@ class User < ActiveRecord::Base
     ]
     def add_to_list
       list_id = "d20fb9e7e3"
-      @gb = Gibbon::Request.new(api_key: ENV["MAILCHIMP_KEY"])
+      @gb = Gibbon::Request.new(api_key: ENV['MAILCHIMP_KEY'])
       subscribe = @gb.lists(list_id).members.create(body: {
         email_address: self.email, 
         status: "subscribed", 
         double_optin: false
         })
+      puts subscribe
    end
 
     private
