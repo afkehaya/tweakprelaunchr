@@ -45,7 +45,6 @@ class User < ActiveRecord::Base
         status: "subscribed", 
         double_optin: false
         })
-      puts subscribe
    end
 
     private
