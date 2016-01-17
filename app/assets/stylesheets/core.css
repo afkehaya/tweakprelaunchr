@@ -263,7 +263,7 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: #000;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -277,7 +277,7 @@ html.home{
 
 #refer .header p{
 	float: left;
-	color: black;
+	color: white;
 	font-weight: 500;
 	text-transform: uppercase;
 	line-height: 50px;
