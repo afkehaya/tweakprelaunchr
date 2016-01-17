@@ -11,6 +11,7 @@
 
         <meta property="og:title" content="Tweak is coming!"/>
         <meta property="og:type" content="website" />
+        <meta property="fb:app_id" content="906992199417046" />
         <meta property="og:description" content="Our legacy in your closet. Didn’t want to leave you all behind. SHARE TWEAK and EARN FREE SHOES. Check them out here."/>
         <meta property="og:image" content="<%= root_url %>assets/refer/blade-explain@2x-4380d899749b74e92e5854b6824d41a0.png"/>
         <meta property="og:url" content="<%= root_url %>"/>
@@ -26,23 +27,7 @@
         <%= csrf_meta_tags %>
 </head>
 <body id="<%= @bodyId %>">
-      <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '906992199417046',
-          xfbml      : true,
-          version    : 'v2.5'
-        });
-      };
 
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
 
 <%= yield %>
     <% if Rails.env.production? %>
