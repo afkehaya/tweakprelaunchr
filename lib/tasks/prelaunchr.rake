@@ -30,7 +30,9 @@ namespace :prelaunchr do
             end
         }
         
-        puts "winners: #{winners.inspect}"
+        puts "AFTER User.all.each LOOP !!!"
+        
+        puts "Final winners: #{winners.inspect}"
 
         winners.each { |stop, list|  
             CSV.open("#{Rails.root}/lib/assets/group_#{stop}.csv", "wb") do |csv|
