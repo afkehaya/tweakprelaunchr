@@ -14,12 +14,18 @@ namespace :prelaunchr do
             puts "user: #{user.inspect}"
 
             stops.reverse_each { |stop|
+               puts "stop: #{stop} | user referrals count: #{user.referrals.count}"
+               puts "(!found): #{!found}"
+               puts "(stop <= user.referrals.count): #{stop <= user.referrals.count}"
+               puts "MAGIC VALUE: #{stop <= user.referrals.count and !found}"
                 if stop <= user.referrals.count and !found
                     found = stop
                 end
             }
 
             if found
+                puts "Inside found TRUE"
+                puts "winners: #{winners.inspect}"
                 winners[found] << user
             end
         }
