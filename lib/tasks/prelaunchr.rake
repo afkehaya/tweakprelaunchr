@@ -3,11 +3,15 @@ require 'csv'
 namespace :prelaunchr do
     desc "Will out put CSV's for each group of users you should email"
     task :create_winner_csvs => :environment do
+        puts "User::REFERRAL_STEPS: #{User::REFERRAL_STEPS.inspect}"
         stops = User::REFERRAL_STEPS.map{|stop| stop["count"]}
+        puts "stops: #{stops.inspect}"
 
         winners = Hash.new {|h,k| h[k]=[]} 
         User.all.each { |user|
             found = nil
+            
+            puts "user: #{user.inspect}"
 
             stops.reverse_each { |stop|
                 if stop <= user.referrals.count and !found
@@ -19,6 +23,8 @@ namespace :prelaunchr do
                 winners[found] << user
             end
         }
+        
+        puts "winners: #{winners.inspect}"
 
         winners.each { |stop, list|  
             CSV.open("#{Rails.root}/lib/assets/group_#{stop}.csv", "wb") do |csv|
