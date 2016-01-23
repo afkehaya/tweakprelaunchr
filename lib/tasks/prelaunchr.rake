@@ -8,7 +8,7 @@ namespace :prelaunchr do
         puts "stops: #{stops.inspect}"
 
         winners = Hash.new {|h,k| h[k]=[]} 
-       User.limit(700).each { |user|
+       User.limit(1000).each { |user|
             found = nil
             
             puts "user: #{user.inspect}"
